@@ -3,8 +3,8 @@ const { parse, settings } = require('./index.js');
 const moment = require('moment');
 
 test('hours of now', t => {
-	t.plan(1);
 	t.equal(parse('now').getHours(), new Date().getHours());
+	t.end();
 });
 
 test('English dates tests', t => {
